@@ -32,7 +32,7 @@ export default function WoodBand() {
         >
           <div className="aspect-[4/5] sm:aspect-[5/4] overflow-hidden rounded-3xl">
             <img
-              src="https://images.unsplash.com/photo-1601058268499-e52658b8bb88?auto=format&fit=crop&w=1600&q=80"
+              src="woodys.png"
               alt="Ruční práce se dřevem v dílně Truhlářství Šustr"
               className="w-full h-full object-cover"
             />
@@ -48,7 +48,7 @@ export default function WoodBand() {
         >
           <div className="flex items-center gap-3 mb-6">
             <span className="h-px w-10 bg-gold" />
-            <span className="eyebrow text-xs font-medium tracking-[0.3em] uppercase text-walnut/60">
+            <span className="eyebrow inline-block bg-copper text-walnut text-xs font-semibold tracking-[0.25em] uppercase px-3 py-1.5 rounded-sm">
               Naše řemeslo
             </span>
           </div>
@@ -57,12 +57,12 @@ export default function WoodBand() {
             <br />
             <span className="text-copper">poctivé řemeslo</span>
           </h2>
-          <p className="mt-6 text-bark text-lg leading-[1.75] max-w-lg">
-            Každý kus prochází rukama našich truhlářů — od výběru materiálu
+          <p className="mt-6 text-bark text-lg leading-[1.75] max-w-lg font-medium">
+            Každý kus prochází rukama našich truhlářů, od výběru materiálu
             přes přesnou CNC výrobu až po ruční dokončení a finální detaily.
           </p>
 
-          <div className="mt-10 grid sm:grid-cols-3 gap-5">
+          <div className="mt-10 space-y-4">
             {points.map((p, i) => (
               <motion.div
                 key={p.title}
@@ -70,14 +70,16 @@ export default function WoodBand() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: 0.15 + i * 0.1 }}
-                className="flex flex-col gap-3 rounded-2xl border border-walnut/10 bg-white/60 backdrop-blur-sm p-5 hover:border-copper/30 hover:shadow-[0_8px_30px_rgba(226,86,43,0.10)] transition-all duration-300"
+                className="flex items-center gap-4 rounded-2xl border border-walnut/10 bg-white/60 backdrop-blur-sm px-5 py-4 hover:border-copper/30 hover:shadow-[0_8px_30px_rgba(214,64,44,0.10)] transition-all duration-300"
               >
-                <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-copper/10 text-copper flex items-center justify-center">
-                  <p.icon size={20} />
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-copper/10 text-copper flex items-center justify-center">
+                  <p.icon size={22} />
                 </div>
                 <div>
-                  <p className="font-display text-lg font-semibold text-walnut">{p.title}</p>
-                  <p className="mt-1.5 text-sm text-bark leading-relaxed">{p.desc}</p>
+                  <p className="font-display text-lg font-semibold text-walnut leading-tight">
+                    {p.title}
+                  </p>
+                  <p className="mt-1 text-sm text-bark leading-relaxed">{p.desc}</p>
                 </div>
               </motion.div>
             ))}

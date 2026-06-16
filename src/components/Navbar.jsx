@@ -3,21 +3,45 @@ import { Link } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 
 const links = [
-  { href: "/#sluzby", label: "Služby" },
   { href: "/#o-nas", label: "O nás" },
-  { href: "/#realizace", label: "Realizace" },
+  { href: "/#sluzby", label: "Služby" },
+  { href: "/#reference", label: "Reference" },
   { href: "/#dotace", label: "Dotace" },
   { href: "/#kontakt", label: "Kontakt" },
 ];
 
+const sectionIds = links.map((l) => l.href.split("#")[1]);
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // scroll-spy: highlight the nav item of the section currently in view
+  useEffect(() => {
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible) setActive(visible.target.id);
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: [0, 0.25, 0.5, 1] }
+    );
+
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -36,15 +60,26 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden lg:flex items-center gap-10">
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              to={l.href}
-              className="text-sm font-medium tracking-wide text-cream hover:text-copper transition-colors"
-            >
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) => {
+            const id = l.href.split("#")[1];
+            const isActive = active === id;
+            return (
+              <Link
+                key={l.href}
+                to={l.href}
+                className={`relative text-sm font-medium tracking-wide transition-colors ${
+                  isActive ? "text-copper" : "text-cream hover:text-copper"
+                }`}
+              >
+                {l.label}
+                <span
+                  className={`absolute -bottom-1.5 left-0 h-0.5 rounded-full bg-copper transition-all duration-300 ${
+                    isActive ? "w-full" : "w-0"
+                  }`}
+                />
+              </Link>
+            );
+          })}
         </nav>
 
         <Link

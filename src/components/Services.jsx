@@ -16,16 +16,15 @@ export default function Services() {
         >
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-10 bg-gold" />
-            <span className="eyebrow text-xs font-medium tracking-[0.3em] uppercase text-walnut/60">
+            <span className="eyebrow inline-block bg-copper text-walnut text-xs font-semibold tracking-[0.25em] uppercase px-3 py-1.5 rounded-sm">
               Co umíme
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-semibold text-walnut leading-[1.1]">
             Naše <span className="text-copper">služby</span>
           </h2>
-          <p className="mt-5 text-bark text-lg leading-[1.7]">
-            Klikněte na kteroukoliv službu a podívejte se na detailní popis
-            a ukázky naší práce.
+          <p className="mt-5 text-bark text-lg leading-[1.7] font-semibold">
+            Podívejte se na detailní popis a ukázky naší práce.
           </p>
         </motion.div>
 
@@ -49,10 +48,7 @@ export default function Services() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-walnut via-walnut/45 to-walnut/5" />
 
-                <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
-                  <span className="eyebrow text-cream/55 text-xs font-medium tracking-[0.25em]">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
+                <div className="absolute inset-x-0 top-0 flex items-center justify-end p-4">
                   <div className="w-9 h-9 rounded-full border border-white/25 bg-white/10 backdrop-blur-md flex items-center justify-center">
                     <s.icon className="text-cream" size={17} />
                   </div>

@@ -36,32 +36,25 @@ export default function WoodTexture() {
         className="absolute -top-1/4 -left-1/4 w-[75vw] h-[75vw] rounded-full"
         style={{
           background:
-            "radial-gradient(circle, rgba(214,64,44,0.07), transparent 62%)",
-          filter: "blur(40px)",
-        }}
-      />
-      <div
-        className="absolute top-1/3 -right-1/4 w-[60vw] h-[60vw] rounded-full"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(214,64,44,0.05), transparent 62%)",
+            "radial-gradient(circle, rgba(214,64,44,0.06), transparent 62%)",
           filter: "blur(40px)",
         }}
       />
 
-      {/* faux-bois line-art wood grain across the whole page — slowly drifting */}
+      {/* original whitewashed plank — tiled at native size so it stays sharp,
+          drifts with scroll */}
       <div
         ref={woodRef}
         className="absolute inset-0"
         style={{
-          backgroundImage: "url('/background-tile.jpg')",
-          backgroundSize: "cover",
-          backgroundRepeat: "repeat-y",
-          opacity: 0.5,
+          backgroundImage: "url('/background-seamless.jpg')",
+          backgroundSize: "1400px auto",
+          backgroundRepeat: "repeat",
+          opacity: 0.6,
         }}
       />
-      {/* soft white wash so text stays crisp over the grain */}
-      <div className="absolute inset-0" style={{ background: "rgba(252,251,250,0.45)" }} />
+      {/* light wash to keep text readable (keeps the grain crisp) */}
+      <div className="absolute inset-0" style={{ background: "rgba(252,251,250,0.42)" }} />
 
       {/* ultra-fine paper grain */}
       <svg className="absolute inset-0 w-full h-full opacity-[0.03]" aria-hidden="true">
@@ -77,14 +70,6 @@ export default function WoodTexture() {
         <rect width="100%" height="100%" filter="url(#paper)" />
       </svg>
 
-      {/* gentle top light for depth */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(110% 65% at 50% -10%, rgba(255,255,255,0.85), transparent 55%)",
-        }}
-      />
     </div>
   );
 }

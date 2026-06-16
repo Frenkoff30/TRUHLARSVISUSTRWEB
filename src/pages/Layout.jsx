@@ -3,6 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WoodTexture from "../components/WoodTexture";
+import CookieBar from "../components/CookieBar";
 
 export default function Layout() {
   const location = useLocation();
@@ -24,6 +25,7 @@ export default function Layout() {
       <Navbar />
       <Outlet />
       <Footer />
+      <CookieBar />
     </>
   );
 }

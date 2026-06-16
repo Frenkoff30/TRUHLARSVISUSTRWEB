@@ -34,7 +34,7 @@ export default function Subsidies() {
           </p>
           <p className="mt-4 text-cream/85 text-lg leading-[1.8]">
             Více informací o konkrétních projektech a podpoře vám rádi
-            poskytneme osobně — neváhejte nás kontaktovat.
+            poskytneme osobně. Neváhejte nás kontaktovat.
           </p>
         </motion.div>
       </div>

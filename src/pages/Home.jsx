@@ -1,8 +1,7 @@
 import Hero from "../components/Hero";
 import Services from "../components/Services";
-import WoodBand from "../components/WoodBand";
 import About from "../components/About";
-import Gallery from "../components/Gallery";
+import Reference from "../components/Reference";
 import Subsidies from "../components/Subsidies";
 import Contact from "../components/Contact";
 
@@ -12,8 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <WoodBand />
-      <Gallery />
+      <Reference />
       <Subsidies />
       <Contact />
     </>

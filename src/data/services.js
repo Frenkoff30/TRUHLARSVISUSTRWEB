@@ -18,9 +18,9 @@ export const services = [
       "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80",
     ],
     paragraphs: [
-      "Kuchyně je srdcem každého domova a u nás vzniká přesně podle vašich představ — od jednoduchého návrhu na míru malého prostoru až po velkorysou kuchyň propojenou s obývacím pokojem.",
+      "Kuchyně je srdcem každého domova a u nás vzniká přesně podle vašich představ, od jednoduchého návrhu na míru malého prostoru až po velkorysou kuchyň propojenou s obývacím pokojem.",
       "Navrhujeme dispozici, materiály i detaily společně s vámi. Pracujeme s lamino deskami, dýhou i masivem, kombinujeme je s kvalitními kováními a precizním olepením hran, aby kuchyně vydržela desítky let bez ztráty vzhledu.",
-      "Díky vlastnímu CNC obrábění zvládneme i netradiční tvary, zaoblené dveře, otevřené police nebo skryté úchyty — to vše s přesností na desetiny milimetru.",
+      "Díky vlastnímu CNC obrábění zvládneme i netradiční tvary, zaoblené dveře, otevřené police nebo skryté úchyty, to vše s přesností na desetiny milimetru.",
     ],
     features: [
       "3D návrh kuchyně zdarma",
@@ -46,9 +46,9 @@ export const services = [
       "https://images.unsplash.com/photo-1601058268499-e52658b8bb88?auto=format&fit=crop&w=900&q=80",
     ],
     paragraphs: [
-      "Vyrábíme vestavné skříně, šatníky, postele, knihovny i kancelářský mobiliář přesně na rozměry vašeho prostoru — žádné kompromisy s katalogovým nábytkem.",
+      "Vyrábíme vestavné skříně, šatníky, postele, knihovny i kancelářský mobiliář přesně na rozměry vašeho prostoru. Žádné kompromisy s katalogovým nábytkem.",
       "Volíte materiál, povrch i barvu podle svého interiéru. Spojujeme klasické řemeslné postupy s moderní CNC technologií, takže dostanete nábytek pevný, přesný a esteticky čistý.",
-      "Rádi poradíme i s funkčním řešením úložných prostor — výsuvy, posuvné dveře, vnitřní organizéry a další praktické detaily.",
+      "Rádi poradíme i s funkčním řešením úložných prostor, jako jsou výsuvy, posuvné dveře, vnitřní organizéry a další praktické detaily.",
     ],
     features: [
       "Vestavné skříně a šatníky na míru",
@@ -63,26 +63,21 @@ export const services = [
     title: "Spotřebiče",
     tagline: "Vestavná technika bez kompromisů",
     desc: "Dodáme a zabudujeme vestavné spotřebiče přesně ladící s designem kuchyně.",
-    heroImg:
-      "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=2000&q=80",
+    heroImg: "",
     cardImg:
       "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1622372738946-62e02505feb3?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1556909114-44e3e70034e2?auto=format&fit=crop&w=900&q=80",
-    ],
+    gallery: [],
     paragraphs: [
-      "Vestavné spotřebiče jsou nedílnou součástí moderní kuchyně. Pomůžeme vám vybrat trouby, varné desky, odsavače, myčky i chladničky, které sedí jak do rozpočtu, tak do designu.",
-      "Zajistíme přesné zabudování spotřebičů do kuchyňské linky včetně potřebných úprav korpusů, odvětrání a elektroinstalace ve spolupráci s prověřenými řemeslníky.",
-      "Výsledkem je kuchyně, kde žádný spotřebič nepůsobí jako cizí prvek — vše ladí do jednoho celku.",
+      "Kuchyň se neobejde bez kvalitních spotřebičů. Nabízíme proto kuchyňské spotřebiče od předních světových výrobců BOSCH, SIEMENS, GORENJE, AEG a Electrolux. Samozřejmě poradíme a doporučíme to nejlepší řešení do vaší kuchyně.",
+      "Garantujeme, že naše prodejní ceny budou nižší než ceny z internetových obchodů, a to díky tomu, že spotřebiče nakupujeme přímo z hlavních skladů výrobců.",
     ],
-    features: [
-      "Poradenství při výběru spotřebičů",
-      "Přesné zabudování do linky",
-      "Sladění s designem kuchyně",
-      "Spolupráce s ověřenými dodavateli",
+    bulletsTitle: "Proč koupit spotřebiče přes nás?",
+    bullets: [
+      "Spotřebiče namontujeme. Cena je včetně odborné montáže a zapojení (vyjma plynových varných desek).",
+      "Vše na jednom místě. Žádné prohledávání pochybných eshopů a objednávání z různých obchodů.",
+      "Bezproblémová reklamace. Nakupujeme výhradně přes české autorizované zastoupení výrobce.",
+      "Odvezeme a ekologicky zlikvidujeme veškeré obaly spotřebičů.",
+      "Záruka 3 až 5 let v ceně.",
     ],
   },
   {
@@ -91,27 +86,31 @@ export const services = [
     title: "Olepování hran",
     tagline: "Detail, který rozhoduje o kvalitě",
     desc: "Precizní olepování hran pro čistý a trvanlivý vzhled každého kusu nábytku.",
-    heroImg:
-      "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=2000&q=80",
+    heroImg: "",
     cardImg:
       "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=900&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1601058268499-e52658b8bb88?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1604709177225-055f99402ea3?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=900&q=80",
-    ],
+    gallery: [],
     paragraphs: [
-      "Olepování hran je drobný detail s velkým dopadem na životnost a vzhled nábytku. Nekvalitně olepená hrana se časem odlupuje, propouští vlhkost a kazí celkový dojem.",
-      "Používáme moderní olepovací technologii s přesným nastavením teploty a tlaku, díky čemuž jsou hrany hladké, neviditelné na dotek a odolné proti vlhkosti i mechanickému poškození.",
-      "Tuto službu nabízíme i samostatně — pokud potřebujete opravit nebo přelepit hrany u stávajícího nábytku, rádi pomůžeme.",
+      "Olepujeme na moderní olepovačce s předfrézováním materiálu značky SCM. Používáme lepidla PUR a EVA, rožkovač, plošné i rádiusové cidliny, kartáče a postřik. Vyměnitelná vanička umožňuje rychlou a snadnou změnu barvy a typu lepidla během olepování (EVA/PUR).",
+      "Tuto službu nabízíme i samostatně. Zakázku olepíme vlastní nebo námi dodanou hranou.",
     ],
-    features: [
-      "ABS i dřevěné hrany",
-      "Odolnost proti vlhkosti a otěru",
-      "Přesné napojení barev a struktur",
-      "Možnost samostatné zakázky",
+    bulletsTitle: "Co olepujeme",
+    bullets: [
+      "Hranujeme deskový materiál od tloušťky 9 mm do 50 mm.",
+      "Lamino olepujeme plastovými ABS hranami o tloušťce 0,5 mm, 1 mm, 2 mm nebo 3 mm.",
+      "Dýhované desky olepujeme dýhovanými hranami 0,6 mm nebo vrstvenými 2 mm silnými hranami, nákližky do 5 mm.",
+      "Na lesklý deskový materiál používáme lesklé ABS hrany.",
+      "Skladem máme různé barvy lepidel Jowatherm.",
     ],
+    pricing: [
+      { label: "Olepování hran, desky do 18 mm", price: "17 Kč / bm" },
+      { label: "Olepování hran, nad 18 mm", price: "19 Kč / bm" },
+      { label: "Olepování lesklých hran", price: "21 Kč / bm" },
+      { label: "Olepování pracovních desek", price: "25 Kč / bm" },
+      { label: "Výměna barvy lepidla během jednoho olepování", price: "100 Kč" },
+    ],
+    priceNote:
+      "Cena olepování je uvedena za olepení běžného metru. Není v ní započtena cena použité hrany. Ceny jsou s DPH.",
   },
   {
     slug: "cnc-obrabeni",
@@ -119,26 +118,25 @@ export const services = [
     title: "CNC obrábění",
     tagline: "Přesnost na desetiny milimetru",
     desc: "Moderní CNC stroje pro přesné řezy, tvary a detaily, které ruční výroba nezvládne.",
-    heroImg:
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=2000&q=80",
+    heroImg: "",
     cardImg:
       "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1581539250439-c96689b516dd?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    ],
+    gallery: [],
     paragraphs: [
       "Naše dílna je vybavena moderními CNC stroji, které nám umožňují vyrábět přesné tvary, otvory pro kování, frézované dekory i složité konstrukční spoje s opakovatelnou přesností.",
       "CNC obrábění využíváme jak pro vlastní zakázky, tak jako samostatnou službu pro truhláře, architekty a designéry, kteří potřebují přesně opracované díly z lamina, dýhy nebo masivu.",
       "Každý díl nejprve navrhneme v CAD/CAM softwaru, takže ještě před výrobou víte přesně, jak bude výsledek vypadat.",
     ],
-    features: [
-      "Přesné frézování a vrtání",
-      "Zpracování lamina, dýhy i masivu",
-      "CAD/CAM návrh dílů",
-      "Zakázky i pro jiné truhláře a firmy",
+    specsTitle: "Technická data (Morbidelli cx100)",
+    specs: [
+      { label: "Max. délka dílce", value: "3050 mm" },
+      { label: "Min. délka dílce", value: "200 mm" },
+      { label: "Max. šířka dílce", value: "900 mm" },
+      { label: "Min. šířka dílce", value: "70 mm" },
+      { label: "Max. tloušťka dílce", value: "60 mm" },
+      { label: "Min. tloušťka dílce", value: "10 mm" },
+      { label: "Max. pojezdová rychlost v ose X", value: "40 m/min." },
+      { label: "Max. pojezdová rychlost v ose Y", value: "40 m/min." },
     ],
   },
 ];

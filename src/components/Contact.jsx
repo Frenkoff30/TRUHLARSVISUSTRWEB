@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Send } from "lucide-react";
 
 function FacebookIcon({ size = 20 }) {
   return (
@@ -15,6 +15,26 @@ function FacebookIcon({ size = 20 }) {
   );
 }
 
+function InstagramIcon({ size = 20 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+    </svg>
+  );
+}
+
 export default function Contact() {
   return (
     <section id="kontakt" className="py-16 lg:py-24 bg-paper scroll-mt-24">
@@ -24,19 +44,19 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="max-w-2xl mb-16"
+          className="max-w-3xl mb-16"
         >
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-10 bg-gold" />
-            <span className="eyebrow text-xs font-medium tracking-[0.3em] uppercase text-walnut/60">
+            <span className="eyebrow inline-block bg-copper text-walnut text-xs font-semibold tracking-[0.25em] uppercase px-3 py-1.5 rounded-sm">
               Kontakt
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-semibold text-walnut leading-[1.1]">
+          <h2 className="text-4xl md:text-5xl font-semibold text-walnut leading-[1.1] lg:whitespace-nowrap">
             Domluvme si <span className="text-copper">nezávaznou</span> schůzku
           </h2>
-          <p className="mt-5 text-bark text-lg leading-[1.7]">
-            Ozvěte se nám telefonem, e-mailem nebo přes formulář — rádi
+          <p className="mt-5 text-bark text-lg leading-[1.7] font-semibold">
+            Ozvěte se nám telefonem, e-mailem nebo přes formulář. Rádi
             s vámi projdeme vaši představu a navrhneme řešení na míru.
           </p>
         </motion.div>
@@ -47,7 +67,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="space-y-6"
+            className="flex flex-col justify-between gap-4 h-full"
           >
             <ContactItem
               icon={MapPin}
@@ -73,6 +93,12 @@ export default function Contact() {
               value="facebook.com/truhlarstvisustr"
               href="https://facebook.com/truhlarstvisustr"
             />
+            <ContactItem
+              icon={InstagramIcon}
+              title="Instagram"
+              value="instagram.com/truhlarstvisustr"
+              href="https://instagram.com/truhlarstvisustr"
+            />
           </motion.div>
 
           <motion.form
@@ -80,51 +106,78 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="bg-cream rounded-3xl p-8 md:p-10 space-y-5"
+            className="bg-cream rounded-3xl p-8 md:p-10 shadow-[0_20px_50px_-25px_rgba(28,25,23,0.3)]"
             action="mailto:truhlarstvi.sustr@seznam.cz"
             method="post"
             encType="text/plain"
           >
-            <div>
-              <label className="block text-sm font-medium text-walnut mb-2">Jméno</label>
-              <input
-                type="text"
-                name="jmeno"
-                required
-                className="w-full rounded-xl border border-walnut/15 bg-white px-4 py-3 text-walnut focus:outline-none focus:border-copper"
-                placeholder="Vaše jméno"
-              />
+            <div className="grid sm:grid-cols-2 gap-5">
+              <Field label="Jméno a příjmení" name="jmeno" placeholder="Jan Novák" required />
+              <Field label="Telefon" name="telefon" type="tel" placeholder="+420 …" />
             </div>
-            <div>
-              <label className="block text-sm font-medium text-walnut mb-2">E-mail</label>
-              <input
-                type="email"
-                name="email"
-                required
-                className="w-full rounded-xl border border-walnut/15 bg-white px-4 py-3 text-walnut focus:outline-none focus:border-copper"
-                placeholder="vas@email.cz"
-              />
+            <div className="mt-5">
+              <Field label="E-mail" name="email" type="email" placeholder="vas@email.cz" required />
             </div>
-            <div>
-              <label className="block text-sm font-medium text-walnut mb-2">Zpráva</label>
+            <div className="mt-5">
+              <label className="block text-sm font-semibold text-walnut mb-2">
+                O jakou službu máte zájem?
+              </label>
+              <select
+                name="sluzba"
+                className="w-full rounded-xl border border-walnut/15 bg-white px-4 py-3 text-walnut focus:outline-none focus:border-copper focus:ring-2 focus:ring-copper/20 transition cursor-pointer"
+                defaultValue=""
+              >
+                <option value="" disabled>Vyberte…</option>
+                <option>Kuchyně na míru</option>
+                <option>Nábytek na míru</option>
+                <option>Vestavné spotřebiče</option>
+                <option>Olepování hran</option>
+                <option>CNC obrábění</option>
+                <option>Něco jiného</option>
+              </select>
+            </div>
+            <div className="mt-5">
+              <label className="block text-sm font-semibold text-walnut mb-2">Zpráva</label>
               <textarea
                 name="zprava"
                 required
-                rows={4}
-                className="w-full rounded-xl border border-walnut/15 bg-white px-4 py-3 text-walnut focus:outline-none focus:border-copper resize-none"
-                placeholder="Popište nám vaši poptávku..."
+                rows={5}
+                className="w-full rounded-xl border border-walnut/15 bg-white px-4 py-3 text-walnut focus:outline-none focus:border-copper focus:ring-2 focus:ring-copper/20 transition resize-none"
+                placeholder="Popište nám vaši představu, rozměry, termín…"
               />
             </div>
             <button
               type="submit"
-              className="w-full rounded-full bg-walnut text-cream px-8 py-4 font-medium hover:bg-copper transition-colors"
+              className="mt-6 group w-full inline-flex items-center justify-center gap-2 rounded-full bg-walnut text-cream px-8 py-4 font-medium hover:bg-copper transition-colors cursor-pointer"
             >
               Odeslat poptávku
+              <Send size={17} className="group-hover:translate-x-1 transition-transform duration-300" />
             </button>
+            <p className="mt-4 text-xs text-stone text-center">
+              Odesláním souhlasíte se zpracováním údajů pro vyřízení vaší poptávky.
+            </p>
           </motion.form>
         </div>
       </div>
     </section>
+  );
+}
+
+function Field({ label, name, type = "text", placeholder, required = false }) {
+  return (
+    <div>
+      <label className="block text-sm font-semibold text-walnut mb-2">
+        {label}
+        {required && <span className="text-copper"> *</span>}
+      </label>
+      <input
+        type={type}
+        name={name}
+        required={required}
+        placeholder={placeholder}
+        className="w-full rounded-xl border border-walnut/15 bg-white px-4 py-3 text-walnut placeholder:text-stone/50 focus:outline-none focus:border-copper focus:ring-2 focus:ring-copper/20 transition"
+      />
+    </div>
   );
 }
 

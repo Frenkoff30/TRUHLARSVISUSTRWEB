@@ -31,8 +31,8 @@ export default function Hero() {
         >
           <div className="flex items-center gap-3 mb-8">
             <span className="h-px w-10 bg-gold" />
-            <span className="eyebrow text-xs font-medium tracking-[0.35em] uppercase text-walnut/60">
-              Truhlářská firma z Hlinska
+            <span className="eyebrow inline-block bg-copper text-walnut text-xs font-semibold tracking-[0.25em] uppercase px-3 py-1.5 rounded-sm">
+              Truhlářská firma ze Svobodných Hamrů
             </span>
           </div>
 
@@ -44,7 +44,7 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="mt-8 text-bark text-lg md:text-xl leading-relaxed max-w-xl">
+          <p className="mt-8 text-bark text-lg md:text-xl leading-relaxed max-w-xl font-semibold">
             Rodinná dílna ze Svobodných Hamrů. Navrhneme a vyrobíme vám kuchyně, nábytek
             i celé interiéry z&nbsp;masivu, dýhy nebo lamina. Vše na vlastních
             CNC strojích.
