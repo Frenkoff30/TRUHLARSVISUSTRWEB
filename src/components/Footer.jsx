@@ -73,11 +73,22 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-cream/10 text-xs text-cream/50 text-center flex flex-col sm:flex-row justify-center gap-3">
-          <span>&copy; {new Date().getFullYear()} Truhlářství Šustr.</span>
-          <Link to="/gdpr" className="hover:text-copper-light transition-colors">
-            Ochrana osobních údajů
-          </Link>
+        <div className="mt-10 pt-6 border-t border-cream/10 text-xs text-cream/50 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <span>&copy; {new Date().getFullYear()} Truhlářství Šustr.</span>
+            <Link to="/gdpr" className="hover:text-copper-light transition-colors">
+              Ochrana osobních údajů
+            </Link>
+          </div>
+          <a
+            href="https://myweb-zeta-bice.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 hover:text-cream transition-colors group"
+          >
+            <img src="/webologo/logoweb.png" alt="Webo" className="h-5 w-5 rounded-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+            <span>Tvorba webu: Webo</span>
+          </a>
         </div>
       </div>
     </footer>
