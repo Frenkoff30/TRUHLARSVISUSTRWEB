@@ -7,11 +7,13 @@ export default function WoodTexture() {
   const woodRef = useRef(null);
 
   useEffect(() => {
+    const isMobile = window.matchMedia("(pointer: coarse)").matches;
+    if (isMobile) return;
+
     let raf = 0;
     const update = () => {
       raf = 0;
       if (woodRef.current) {
-        // pan the (seamlessly tileable) grain opposite to scroll for depth
         woodRef.current.style.backgroundPositionY = `${-window.scrollY * 0.55}px`;
       }
     };
@@ -55,6 +57,7 @@ export default function WoodTexture() {
       />
       {/* light wash to keep text readable (keeps the grain crisp) */}
       <div className="absolute inset-0" style={{ background: "rgba(252,251,250,0.42)" }} />
+      
 
       {/* ultra-fine paper grain */}
       <svg className="absolute inset-0 w-full h-full opacity-[0.03]" aria-hidden="true">
