@@ -86,8 +86,8 @@ export default function Footer() {
             rel="noreferrer"
             className="flex items-center gap-2 hover:text-cream transition-colors group"
           >
-            <img src="/webologo/logoweb.png" alt="Webo" className="h-5 w-5 rounded-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
-            <span>Tvorba webu: Webo</span>
+            <span className="text-cream/40">Made by</span>
+            <img src="/webologo/logoweb.png" alt="Webo" className="h-8 w-auto opacity-70 group-hover:opacity-100 transition-opacity" />
           </a>
         </div>
       </div>
