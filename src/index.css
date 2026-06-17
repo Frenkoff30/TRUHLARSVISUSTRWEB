@@ -29,6 +29,7 @@ body {
   font-family: var(--font-sans);
   color: var(--color-ink);
   background-color: #fcfbfa;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
