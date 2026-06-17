@@ -72,16 +72,19 @@ export default function ServiceDetail() {
                     {service.bulletsTitle}
                   </h2>
                 )}
-                <ul className="space-y-3">
-                  {service.bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-3 text-ink font-semibold">
-                      <span className="mt-1 shrink-0 rounded-full bg-copper/15 text-copper p-1">
+                <div className="rounded-2xl bg-paper overflow-hidden">
+                  {service.bullets.map((b, i) => (
+                    <div
+                      key={b}
+                      className={`flex items-start gap-4 px-5 py-3.5 ${i !== 0 ? "border-t border-walnut/10" : ""}`}
+                    >
+                      <span className="mt-0.5 shrink-0 rounded-full bg-copper/15 text-copper p-1">
                         <Check size={14} />
                       </span>
-                      <span className="leading-relaxed">{b}</span>
-                    </li>
+                      <span className="text-ink font-semibold leading-relaxed">{b}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             )}
 
@@ -106,7 +109,7 @@ export default function ServiceDetail() {
                   ))}
                 </div>
                 {service.priceNote && (
-                  <p className="mt-3 text-sm text-stone leading-relaxed">
+                  <p className="mt-3 text-sm text-stone leading-relaxed font-semibold bg-paper rounded-xl px-5 py-3">
                     {service.priceNote}
                   </p>
                 )}

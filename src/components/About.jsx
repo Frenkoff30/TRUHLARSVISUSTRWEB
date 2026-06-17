@@ -38,19 +38,14 @@ export default function About() {
             <span className="text-copper">1995</span>
           </h2>
           <p className="mt-7 text-bark text-lg leading-[1.75] max-w-xl font-semibold">
-            Naše rodinná firma byla založena v roce 1995. Sídlíme v obci
-            Svobodné Hamry, kterou najdete 6&nbsp;km od Hlinska v Čechách.
+            Naše rodinná firma byla založena v&nbsp;roce 1995. Sídlíme v&nbsp;obci Svobodné Hamry, kterou najdete 6&nbsp;km od Hlinska v&nbsp;Čechách.
           </p>
           <p className="mt-5 text-bark text-lg leading-[1.75] max-w-xl font-semibold">
-            Zabýváme se zakázkovou výrobou kuchyní, dveří, oken, schodů a nábytku
-            z masivního dřeva a lamina, včetně zaměření, dovozu a montáže. Dále
-            nabízíme pokládku podlah, montáž plastových i dřevěných palubek
-            (obložení říms, štítů a stěn) a další řemeslné práce.
+            Zabýváme se zakázkovou výrobou kuchyní, dveří, oken, schodů a&nbsp;nábytku z&nbsp;masivního dřeva a&nbsp;lamina, včetně zaměření, dovozu a&nbsp;montáže. Dále nabízíme pokládku podlah, montáž plastových i&nbsp;dřevěných palubek (obložení říms, štítů a&nbsp;stěn) a&nbsp;další řemeslné práce.
           </p>
           <p className="mt-5 text-bark text-lg leading-[1.75] max-w-xl font-semibold">
             Řemeslo se snažíme dělat{" "}
-            <span className="accent">kvalitně a poctivě</span>. Kompletní výroba
-            probíhá na CNC strojích.
+            <span className="accent">kvalitně a&nbsp;poctivě</span>. Kompletní výroba probíhá na&nbsp;CNC strojích.
           </p>
         </motion.div>
       </div>

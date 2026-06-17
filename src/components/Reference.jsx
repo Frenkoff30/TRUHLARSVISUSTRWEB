@@ -40,9 +40,8 @@ export default function Reference() {
           <h2 className="text-4xl md:text-5xl font-semibold text-walnut leading-[1.1]">
             Co říkají naši <span className="text-copper">zákazníci</span>
           </h2>
-          <p className="mt-5 text-bark text-lg leading-[1.7] font-semibold">
-            Spokojenost zákazníků je pro nás nejlepší vizitkou. Přečtěte si,
-            jak hodnotí naši práci.
+          <p className="mt-5 text-bark text-lg leading-[1.7] font-semibold whitespace-nowrap">
+            Spokojenost zákazníků je pro nás nejlepší vizitkou. Přečtěte si, jak hodnotí naši práci.
           </p>
         </motion.div>
 

@@ -26,15 +26,11 @@ export default function Subsidies() {
           <h2 className="mt-5 text-4xl md:text-5xl font-semibold leading-[1.1]">
             Investujeme do rozvoje naší dílny
           </h2>
-          <p className="mt-7 text-cream/85 text-lg leading-[1.8]">
-            Díky podpoře z evropských a národních dotačních programů
-            jsme mohli modernizovat naše CNC vybavení a technologické
-            zázemí. To se přímo promítá do přesnosti, rychlosti
-            a kvality každé zakázky.
+          <p className="mt-7 text-cream/85 text-lg leading-[1.8] text-balance">
+            Díky podpoře z&nbsp;evropských a&nbsp;národních dotačních programů jsme mohli modernizovat naše CNC vybavení a&nbsp;technologické zázemí. To se přímo promítá do přesnosti, rychlosti a&nbsp;kvality každé zakázky.
           </p>
-          <p className="mt-4 text-cream/85 text-lg leading-[1.8]">
-            Více informací o konkrétních projektech a podpoře vám rádi
-            poskytneme osobně. Neváhejte nás kontaktovat.
+          <p className="mt-4 text-cream/85 text-lg leading-[1.8] text-balance">
+            Více informací o&nbsp;konkrétních projektech a&nbsp;podpoře vám rádi poskytneme osobně. Neváhejte nás kontaktovat.
           </p>
         </motion.div>
       </div>

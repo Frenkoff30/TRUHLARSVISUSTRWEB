@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function FacebookIcon({ size = 20 }) {
   return (
@@ -67,7 +68,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col justify-between gap-4 h-full"
+            className="flex flex-col justify-between h-full"
           >
             <ContactItem
               icon={MapPin}
@@ -146,6 +147,22 @@ export default function Contact() {
                 placeholder="Popište nám vaši představu, rozměry, termín…"
               />
             </div>
+            <div className="mt-5 flex items-start gap-3">
+              <input
+                type="checkbox"
+                id="gdpr"
+                name="gdpr"
+                required
+                className="mt-1 shrink-0 w-4 h-4 accent-copper cursor-pointer"
+              />
+              <label htmlFor="gdpr" className="text-sm text-stone leading-relaxed">
+                Souhlasím se{" "}
+                <Link to="/gdpr" className="text-copper hover:underline" target="_blank">
+                  zpracováním osobních údajů
+                </Link>{" "}
+                za účelem vyřízení mé poptávky.
+              </label>
+            </div>
             <button
               type="submit"
               className="mt-6 group w-full inline-flex items-center justify-center gap-2 rounded-full bg-walnut text-cream px-8 py-4 font-medium hover:bg-copper transition-colors cursor-pointer"
@@ -153,9 +170,6 @@ export default function Contact() {
               Odeslat poptávku
               <Send size={17} className="group-hover:translate-x-1 transition-transform duration-300" />
             </button>
-            <p className="mt-4 text-xs text-stone text-center">
-              Odesláním souhlasíte se zpracováním údajů pro vyřízení vaší poptávky.
-            </p>
           </motion.form>
         </div>
       </div>
@@ -187,7 +201,7 @@ function ContactItem({ icon: Icon, title, value, href }) {
       href={href}
       target={href.startsWith("http") ? "_blank" : undefined}
       rel="noreferrer"
-      className="flex items-start gap-4 rounded-2xl bg-cream p-5 hover:bg-walnut hover:text-cream transition-colors group"
+      className="flex items-start gap-4 rounded-2xl bg-cream p-6 hover:bg-walnut hover:text-cream transition-colors group"
     >
       <div className="shrink-0 rounded-xl bg-walnut text-cream group-hover:bg-copper p-3 transition-colors">
         <Icon size={20} />

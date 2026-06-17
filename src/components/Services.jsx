@@ -48,12 +48,6 @@ export default function Services() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-walnut via-walnut/45 to-walnut/5" />
 
-                <div className="absolute inset-x-0 top-0 flex items-center justify-end p-4">
-                  <div className="w-9 h-9 rounded-full border border-white/25 bg-white/10 backdrop-blur-md flex items-center justify-center">
-                    <s.icon className="text-cream" size={17} />
-                  </div>
-                </div>
-
                 <div className="absolute inset-x-0 bottom-0 p-4">
                   <h3 className="text-cream text-lg font-semibold tracking-tight leading-tight">
                     {s.title}

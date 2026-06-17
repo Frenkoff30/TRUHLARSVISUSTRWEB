@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function FacebookIcon({ size = 18 }) {
   return (
@@ -72,8 +73,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-cream/10 text-xs text-cream/50 text-center">
-          &copy; {new Date().getFullYear()} Truhlářství Šustr.
+        <div className="mt-10 pt-6 border-t border-cream/10 text-xs text-cream/50 text-center flex flex-col sm:flex-row justify-center gap-3">
+          <span>&copy; {new Date().getFullYear()} Truhlářství Šustr.</span>
+          <Link to="/gdpr" className="hover:text-copper-light transition-colors">
+            Ochrana osobních údajů
+          </Link>
         </div>
       </div>
     </footer>
