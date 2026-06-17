@@ -1,9 +1,25 @@
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
+import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+
+const HERO_IMAGES = [
+  "/kuchyne/kuchynherosekce.jpg",
+  "/kuchyne/kitchen3.jpg",
+  "/kuchyne/kuchyn9.jpg",
+  "/kuchyne/kuchyn11.jpg",
+];
 
 export default function Hero() {
   const imgRef = useRef(null);
+  const [imgIndex, setImgIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setImgIndex((i) => (i + 1) % HERO_IMAGES.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: imgRef,
     offset: ["start end", "end start"],
@@ -77,14 +93,21 @@ export default function Hero() {
           <div className="absolute -inset-2.5 rounded-[1.6rem] border border-copper/30 -z-10" />
           <div
             ref={imgRef}
-            className="aspect-[4/5] overflow-hidden rounded-[1.4rem] shadow-[0_30px_80px_-20px_rgba(28,25,23,0.45)]"
+            className="aspect-[4/5] overflow-hidden rounded-[1.4rem] shadow-[0_30px_80px_-20px_rgba(28,25,23,0.45)] relative"
           >
-            <motion.img
-              style={{ y: imgY }}
-              src="/kuchyne/kuchynherosekce.jpg"
-              alt="Moderní kuchyň na míru od Truhlářství Šustr"
-              className="w-full h-[106%] object-cover"
-            />
+            <AnimatePresence mode="sync">
+              <motion.img
+                key={imgIndex}
+                style={{ y: imgY }}
+                src={HERO_IMAGES[imgIndex]}
+                alt="Moderní kuchyň na míru od Truhlářství Šustr"
+                className="absolute inset-0 w-full h-[106%] object-cover"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1 }}
+              />
+            </AnimatePresence>
           </div>
 
           {/* floating glass credential card */}
