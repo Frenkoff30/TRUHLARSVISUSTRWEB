@@ -155,13 +155,13 @@ export default function Contact() {
                 required
                 className="mt-1 shrink-0 w-4 h-4 accent-copper cursor-pointer"
               />
-              <label htmlFor="gdpr" className="text-sm text-stone leading-relaxed">
-                Souhlasím se{" "}
-                <Link to="/gdpr" className="text-copper hover:underline" target="_blank">
+              <span className="text-sm text-stone leading-relaxed">
+                <label htmlFor="gdpr">Souhlasím se{" "}</label>
+                <Link to="/gdpr" className="text-copper hover:underline">
                   zpracováním osobních údajů
-                </Link>{" "}
-                za účelem vyřízení mé poptávky.
-              </label>
+                </Link>
+                <label htmlFor="gdpr">{" "}za účelem vyřízení mé poptávky.</label>
+              </span>
             </div>
             <button
               type="submit"
