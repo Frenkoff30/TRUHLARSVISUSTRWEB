@@ -108,9 +108,8 @@ export default function Contact() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="bg-cream rounded-3xl p-8 md:p-10 shadow-[0_20px_50px_-25px_rgba(28,25,23,0.3)]"
-            action="mailto:truhlarstvi.sustr@seznam.cz"
-            method="post"
-            encType="text/plain"
+            action="https://formspree.io/f/mnjyydwb"
+            method="POST"
           >
             <div className="grid sm:grid-cols-2 gap-5">
               <Field label="Jméno a příjmení" name="jmeno" placeholder="Jan Novák" required />

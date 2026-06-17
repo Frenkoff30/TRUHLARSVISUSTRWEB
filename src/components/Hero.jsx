@@ -45,7 +45,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-8 text-bark text-lg md:text-xl leading-relaxed max-w-xl font-semibold">
-            Rodinná dílna ze Svobodných Hamrů. Navrhneme a&nbsp;vyrobíme vám kuchyně, nábytek i&nbsp;celé interiéry z&nbsp;masivu, dýhy nebo lamina. Vše na vlastních CNC strojích.
+            Rodinná dílna ze Svobodných Hamrů. Navrhneme a&nbsp;vyrobíme vám kuchyně a&nbsp;nábytek z&nbsp;masivu, dýhy nebo&nbsp;lamina. Vše na vlastních CNC strojích.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">
