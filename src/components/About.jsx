@@ -41,7 +41,7 @@ export default function About() {
             Naše rodinná firma byla založena v&nbsp;roce 1995. Sídlíme v&nbsp;obci Svobodné Hamry, kterou najdete 6&nbsp;km od Hlinska v&nbsp;Čechách.
           </p>
           <p className="mt-5 text-bark text-lg leading-[1.75] max-w-xl font-semibold">
-            Zabýváme se zakázkovou výrobou kuchyní, dveří, oken, schodů a&nbsp;nábytku z&nbsp;masivního dřeva a&nbsp;lamina, včetně zaměření, dovozu a&nbsp;montáže. Dále nabízíme pokládku podlah, montáž plastových i&nbsp;dřevěných palubek (obložení říms, štítů a&nbsp;stěn) a&nbsp;další řemeslné práce.
+            Zabýváme se zakázkovou výrobou kuchyní a&nbsp;nábytku z&nbsp;masivního dřeva a&nbsp;lamina, včetně zaměření, dovozu a&nbsp;montáže.
           </p>
           <p className="mt-5 text-bark text-lg leading-[1.75] max-w-xl font-semibold">
             Řemeslo se snažíme dělat{" "}

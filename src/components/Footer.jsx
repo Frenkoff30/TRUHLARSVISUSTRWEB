@@ -22,7 +22,7 @@ function InstagramIcon({ size = 18 }) {
 // TODO: doplnit skutečný odkaz na Instagram
 const socials = [
   { icon: FacebookIcon, href: "https://facebook.com/truhlarstvisustr", label: "Facebook" },
-  { icon: InstagramIcon, href: "https://instagram.com/truhlarstvisustr", label: "Instagram" },
+  { icon: InstagramIcon, href: "https://www.instagram.com/truhlarstvi.sustr/", label: "Instagram" },
 ];
 
 export default function Footer() {

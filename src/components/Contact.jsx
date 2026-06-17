@@ -98,7 +98,7 @@ export default function Contact() {
               icon={InstagramIcon}
               title="Instagram"
               value="instagram.com/truhlarstvisustr"
-              href="https://instagram.com/truhlarstvisustr"
+              href="https://www.instagram.com/truhlarstvi.sustr/"
             />
           </motion.div>
 
