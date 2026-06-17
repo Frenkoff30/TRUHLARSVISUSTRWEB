@@ -4,17 +4,17 @@ import { Star, Quote } from "lucide-react";
 // TODO: nahradit skutečnými recenzemi zákazníků
 const reviews = [
   {
-    text: "Kuchyň na míru předčila naše očekávání. Skvělé zpracování, vše do posledního detailu sedělo a montáž proběhla rychle a čistě.",
+    text: "Kuchyň přesně podle našich představ, nic jsme nemuseli řešit. Přijeli, zaměřili, odvezli a pak přivezli hotovou. Jsme nadšení.",
     name: "Petra N.",
     place: "Hlinsko",
   },
   {
-    text: "Vstřícný přístup od prvního zaměření až po dodání. Vestavné skříně využily každý centimetr prostoru. Doporučuji.",
+    text: "Skříně do půdy, které jsme nechali udělat na míru, sedí dokonale. Rychle, bez problémů, cena odpovídala. Určitě se vrátíme.",
     name: "Martin K.",
     place: "Skuteč",
   },
   {
-    text: "Poctivá práce za férovou cenu a vše v dohodnutém termínu. Z masivu nám vyrobili nábytek, který vydrží generace.",
+    text: "Dali jsme jim volnou ruku a nelitujeme. Jídelní stůl z masivu je nádherný a vypadá líp, než jsme čekali. Skvělá práce.",
     name: "Jana a Tomáš H.",
     place: "Chrudim",
   },
