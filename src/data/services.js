@@ -9,13 +9,21 @@ export const services = [
     desc: "Zakázkové kuchyňské linky navržené přesně na míru vašemu prostoru, stylu i rozpočtu.",
     heroImg:
       "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=2000&q=80",
-    cardImg:
-      "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=1200&q=80",
+    cardImg: "/kuchyne/kitchen2.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1556909114-44e3e70034e2?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1622372738946-62e02505feb3?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80",
+      "/kuchyne/kitchen1.jpg",
+      "/kuchyne/kitchen2.jpg",
+      "/kuchyne/kitchen3.jpg",
+      "/kuchyne/kitchen4.jpg",
+      "/kuchyne/kitchen5.jpg",
+      "/kuchyne/kitchen6.jpg",
+      "/kuchyne/kitche7.jpg",
+      "/kuchyne/kuchyn7.jpg",
+      "/kuchyne/kuchyn8.jpg",
+      "/kuchyne/kuchyn9.jpg",
+      "/kuchyne/kuchyn10.jpg",
+      "/kuchyne/kuchyn11.jpg",
+      "/kuchyne/kuchyn12.jpg",
     ],
     paragraphs: [
       "Kuchyně je srdcem každého domova a u nás vzniká přesně podle vašich představ, od jednoduchého návrhu na míru malého prostoru až po velkorysou kuchyň propojenou s obývacím pokojem.",
@@ -37,13 +45,19 @@ export const services = [
     desc: "Skříně, postele, kancelářský i obývací nábytek z laminovaných desek, dýhy a masivu.",
     heroImg:
       "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=2000&q=80",
-    cardImg:
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=900&q=80",
+    cardImg: "/nabytek/nabytek5.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1604709177225-055f99402ea3?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1601058268499-e52658b8bb88?auto=format&fit=crop&w=900&q=80",
+      "/nabytek/nabytek1.jpg",
+      "/nabytek/nabytek2.jpg",
+      "/nabytek/nabytek3.jpg",
+      "/nabytek/nabytek4.jpg",
+      "/nabytek/nabytek5.jpg",
+      "/nabytek/nabytek6.jpg",
+      "/nabytek/nabytek7.jpg",
+      "/nabytek/nabytek8.jpg",
+      "/nabytek/nabytek9.jpg",
+      "/nabytek/nabytek10.jpg",
+      "/nabytek/nabytek11.jpg",
     ],
     paragraphs: [
       "Vyrábíme vestavné skříně, šatníky, postele, knihovny i kancelářský mobiliář přesně na rozměry vašeho prostoru. Žádné kompromisy s katalogovým nábytkem.",

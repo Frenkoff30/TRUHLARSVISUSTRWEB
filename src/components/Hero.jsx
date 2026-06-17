@@ -81,7 +81,7 @@ export default function Hero() {
           >
             <motion.img
               style={{ y: imgY }}
-              src="https://images.unsplash.com/photo-1622372738946-62e02505feb3?auto=format&fit=crop&w=1000&q=80"
+              src="/kuchyne/kuchynherosekce.jpg"
               alt="Moderní kuchyň na míru od Truhlářství Šustr"
               className="w-full h-[106%] object-cover"
             />

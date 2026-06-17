@@ -1,11 +1,14 @@
+import { useState } from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, Check } from "lucide-react";
 import { services, getServiceBySlug } from "../data/services";
+import Lightbox from "../components/Lightbox";
 
 export default function ServiceDetail() {
   const { slug } = useParams();
   const service = getServiceBySlug(slug);
+  const [lightboxIndex, setLightboxIndex] = useState(null);
 
   if (!service) return <Navigate to="/" replace />;
 
@@ -142,7 +145,11 @@ export default function ServiceDetail() {
             {service.gallery?.length > 0 && (
               <div className="grid grid-cols-2 gap-4 mt-10">
                 {service.gallery.map((src, i) => (
-                  <div key={i} className="aspect-[4/3] rounded-2xl overflow-hidden">
+                  <div
+                    key={i}
+                    className="aspect-[4/3] rounded-2xl overflow-hidden cursor-zoom-in"
+                    onClick={() => setLightboxIndex(i)}
+                  >
                     <img
                       src={src}
                       alt={`${service.title} – ukázka ${i + 1}`}
@@ -151,6 +158,16 @@ export default function ServiceDetail() {
                   </div>
                 ))}
               </div>
+            )}
+
+            {lightboxIndex !== null && (
+              <Lightbox
+                images={service.gallery}
+                index={lightboxIndex}
+                onClose={() => setLightboxIndex(null)}
+                onPrev={() => setLightboxIndex((lightboxIndex - 1 + service.gallery.length) % service.gallery.length)}
+                onNext={() => setLightboxIndex((lightboxIndex + 1) % service.gallery.length)}
+              />
             )}
           </motion.div>
 
