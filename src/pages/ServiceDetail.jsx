@@ -205,9 +205,9 @@ export default function ServiceDetail() {
 
             <div className="flex justify-center pt-2">
               <img
-                src="/blacklogo.png"
+                src="/cernelogo.png"
                 alt="Truhlářství Šustr"
-                className="w-full max-w-[18rem] h-auto drop-shadow-[0_20px_30px_rgba(28,25,23,0.2)]"
+                className="w-full max-w-[28rem] h-auto drop-shadow-[0_20px_30px_rgba(28,25,23,0.2)]"
               />
             </div>
           </motion.div>
