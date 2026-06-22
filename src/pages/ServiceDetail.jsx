@@ -62,10 +62,25 @@ export default function ServiceDetail() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
+            {service.steps && (
+              <h2 className="font-display text-2xl font-semibold text-walnut mb-6">
+                Jak to funguje
+              </h2>
+            )}
+
             {service.paragraphs.map((p, i) => (
               <p key={i} className="text-ink text-lg leading-[1.75] mb-5 font-semibold">
                 {p}
               </p>
+            ))}
+
+            {service.steps?.map((step, i) => (
+              <div key={i} className="mt-6">
+                <h2 className="font-display text-2xl font-semibold text-walnut mb-3">
+                  {step.title}
+                </h2>
+                <p className="text-ink text-lg leading-[1.75] font-semibold">{step.text}</p>
+              </div>
             ))}
 
             {service.bullets?.length > 0 && (

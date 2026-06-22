@@ -3,10 +3,10 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import { ArrowRight } from "lucide-react";
 
 const HERO_IMAGES = [
-  "/kuchyne/kuchynherosekce.jpg",
-  "/kuchyne/kitchen3.jpg",
-  "/kuchyne/kuchyn9.jpg",
-  "/kuchyne/kuchyn11.jpg",
+  "/herokucyn1.jpg",
+  "/herokuchyn2.jpg",
+  "/herokuchyn3.jpg",
+  "/herokuchyn4.jpg",
 ];
 
 export default function Hero() {

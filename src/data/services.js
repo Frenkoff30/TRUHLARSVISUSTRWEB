@@ -1,4 +1,4 @@
-import { ChefHat, Sofa, Plug, Layers, Cpu } from "lucide-react";
+﻿import { ChefHat, Sofa, Plug, Layers, Cpu } from "lucide-react";
 
 export const services = [
   {
@@ -24,11 +24,17 @@ export const services = [
       "/kuchyne/kuchyn10.jpg",
       "/kuchyne/kuchyn11.jpg",
       "/kuchyne/kuchyn12.jpg",
+      "/herokucyn1.jpg",
+      "/herokuchyn2.jpg",
+      "/herokuchyn3.jpg",
+      "/herokuchyn4.jpg",
     ],
     paragraphs: [
-      "Kuchyně je srdcem každého domova a u nás vzniká přesně podle vašich představ, od jednoduchého návrhu na míru malého prostoru až po velkorysou kuchyň propojenou s obývacím pokojem.",
-      "Navrhujeme dispozici, materiály i detaily společně s vámi. Pracujeme s lamino deskami, dýhou i masivem, kombinujeme je s kvalitními kováními a precizním olepením hran, aby kuchyně vydržela desítky let bez ztráty vzhledu.",
-      "Díky vlastnímu CNC obrábění zvládneme i netradiční tvary, zaoblené dveře, otevřené police nebo skryté úchyty, to vše s přesností na desetiny milimetru.",
+      "V prvním kroku si od vás vyžádáme podklady k novému bydlení, jako je například půdorys, vaše představa nebo předpokládaná částka, kterou máte na realizaci připravenou.",
+    ],
+    steps: [
+      { title: "Podklady", text: "Vizualizace tvoříme bezplatně a pouze jako součást celé spolupráce. Veškeré podklady dostanete v elektronické podobě, a tak si je můžete prohlédnout z pohodlí domova. Součástí cenové nabídky je i položkový rozpočet, kde si můžete zkontrolovat, za co platíte." },
+      { title: "Osobní schůzka", text: "Na osobní schůzku k nám na truhlárnu vás pozveme ve chvíli, kdy od nás máte hotové všechny podklady. Můžeme se tak již bavit nad konkrétními body, prohlédnout si materiály a doladit detaily. Po osobní schůzce od nás obdržíte ještě výrobní dokumentaci, podle které se řídíme při samotné výrobě." },
     ],
     features: [
       "3D návrh kuchyně zdarma",
@@ -77,8 +83,8 @@ export const services = [
     title: "Spotřebiče",
     tagline: "Vestavná technika bez kompromisů",
     desc: "Dodáme a zabudujeme vestavné spotřebiče přesně ladící s designem kuchyně.",
-    heroImg: "https://www.chip.cz/sites/default/files/2025-03/energie_spotrebice_midjourney.jpg",
-    cardImg: "https://www.chip.cz/sites/default/files/2025-03/energie_spotrebice_midjourney.jpg",
+    heroImg: "/spotrebicefoto.jpg",
+    cardImg: "/spotrebicefoto.jpg",
     gallery: [],
     paragraphs: [
       "Kuchyň se neobejde bez kvalitních spotřebičů. Nabízíme proto kuchyňské spotřebiče od předních světových výrobců BOSCH, SIEMENS, GORENJE, AEG a Electrolux. Samozřejmě poradíme a doporučíme to nejlepší řešení do vaší kuchyně.",
@@ -99,8 +105,8 @@ export const services = [
     title: "Olepování hran",
     tagline: "Detail, který rozhoduje o kvalitě",
     desc: "Precizní olepování hran pro čistý a trvanlivý vzhled každého kusu nábytku.",
-    heroImg: "https://www.dobrestroje.cz/fotky5238/OAV_ABG/OLEPOVACKY/ABG_MAX350M/olepovacka-hran-OAV-ABG-max-350m-dobre-stroje-D03.jpg",
-    cardImg: "https://www.dobrestroje.cz/fotky5238/OAV_ABG/OLEPOVACKY/ABG_MAX350M/olepovacka-hran-OAV-ABG-max-350m-dobre-stroje-D03.jpg",
+    heroImg: "/olepovanihranfoto.jpg",
+    cardImg: "/olepovanihranfoto.jpg",
     gallery: [],
     paragraphs: [
       "Olepujeme na moderní olepovačce s předfrézováním materiálu značky SCM. Používáme lepidla PUR a EVA, rožkovač, plošné i rádiusové cidliny, kartáče a postřik. Vyměnitelná vanička umožňuje rychlou a snadnou změnu barvy a typu lepidla během olepování (EVA/PUR).",
