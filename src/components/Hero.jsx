@@ -61,9 +61,9 @@ export default function Hero() {
           </h1>
 
           <p className="mt-8 text-bark text-lg md:text-xl leading-relaxed max-w-xl font-semibold">
-            Zabýváme se zakázkovou výrobou kuchyní a&nbsp;nábytku z&nbsp;lamina, dýhy a&nbsp;masivu.
+            Zakázková výroba kuchyní a&nbsp;nábytku z&nbsp;lamina, dýhy a&nbsp;masivu.
             <br />
-            Zajišťujeme plný předvýrobní a&nbsp;výrobní servis, vizualizace, projekt, prodej spotřebičů, položkový rozpočet, výrobu, dopravu a&nbsp;montáž. Kompletní výroba na CNC strojích.
+            Od návrhu přes výrobu až po montáž, vše pod jednou střechou.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">
