@@ -53,15 +53,17 @@ export default function Hero() {
           </div>
 
           <h1 className="text-walnut text-5xl md:text-6xl lg:text-[4.5rem] leading-[1.04] font-semibold">
-            Nábytek na míru,
+            Kuchyně a&nbsp;interiéry,
             <br />
             <span className="text-copper">
-              který vydrží generace
+              které budou sloužit mnoho let
             </span>
           </h1>
 
           <p className="mt-8 text-bark text-lg md:text-xl leading-relaxed max-w-xl font-semibold">
-            Rodinná dílna ze Svobodných Hamrů. Navrhneme a&nbsp;vyrobíme vám kuchyně a&nbsp;nábytek z&nbsp;masivu, dýhy nebo&nbsp;lamina. Vše na vlastních CNC strojích.
+            Zabýváme se zakázkovou výrobou kuchyní a&nbsp;nábytku z&nbsp;lamina, dýhy a&nbsp;masivu.
+            <br />
+            Zajišťujeme plný předvýrobní a&nbsp;výrobní servis, vizualizace, projekt, prodej spotřebičů, položkový rozpočet, výrobu, dopravu a&nbsp;montáž. Kompletní výroba na CNC strojích.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">
@@ -88,12 +90,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30, scale: 0.97 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
-          className="relative max-w-sm w-full mx-auto lg:ml-auto"
+          className="relative max-w-lg w-full mx-auto lg:ml-auto"
         >
           <div className="absolute -inset-2.5 rounded-[1.6rem] border border-copper/30 -z-10" />
           <div
             ref={imgRef}
-            className="aspect-[4/5] overflow-hidden rounded-[1.4rem] shadow-[0_30px_80px_-20px_rgba(28,25,23,0.45)] relative"
+            className="aspect-square overflow-hidden rounded-[1.4rem] shadow-[0_30px_80px_-20px_rgba(28,25,23,0.45)] relative"
           >
             <AnimatePresence mode="sync">
               <motion.img
